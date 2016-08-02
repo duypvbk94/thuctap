@@ -1,0 +1,42 @@
+<?xml	version="1.0"?>
+<config	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/m
+enu.xsd">
+    <menu>
+        <add
+                id="Training_Duy::duy"
+                title="Duy"
+                module="Training_Duy"
+                sortOrder="50"
+                parent="Magento_Backend::marketing"
+                resource="Training_Duy::duy"
+        />
+        <add
+                id="Training_Duy::index"
+                title="Duy	Index"
+                module="Training_Duy"
+                sortOrder="55"
+                parent="Training_Duy::duy"
+                action="duy/index/"
+                resource="Training_Duy::index"
+        />
+        <add
+                id="Training_Duy::subscription"
+                title="Subscriptions"
+                module="Training_Duy"
+                sortOrder="70"
+                parent="Training_Duy::duy"
+                action="duy/subscription/"
+                resource="Training_Duy::subscription"
+        />
+        <add
+                id="Training_Duy::component"
+                title="Components"
+                module="Training_Duy"
+                sortOrder="80"
+                parent="Training_Duy::duy"
+                action="duy/component/"
+                resource="Training_Duy::duy"
+        />
+    </menu>
+</config>
